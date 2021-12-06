@@ -28,7 +28,6 @@ public class FastCollinearPoints {
         List<LineSegment> lineSegments = new ArrayList<>();
         for (int i = 0; i < copy1.length; i++) {
             Point base = copy1[i]; //base p
-            Arrays.sort(copy2);
             Arrays.sort(copy2, base.slopeOrder());
             int count = 1;
             Point startPoint = null; //starting point of line
